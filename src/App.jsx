@@ -1,9 +1,16 @@
-import './App.css'
+import React from 'react';
+import Navbar from './components/Navbar';
+import './App.css';
 
-export default function App() {
+function App() {
   return (
-    <div className="h-screen bg-gradient-to-br from-purple-700 to-black flex items-center justify-center text-white text-4xl font-bold">
-      ¡Hola, Bienvenido a mi portafolio ahora si!
+    <div className="min-h-screen bg-[#1B1F2B] pt-[100px]">
+      <Navbar />
+      <div className="container">
+        {/* Aquí irá el contenido de las secciones */}
+      </div>
     </div>
   );
 }
+
+export default App;
